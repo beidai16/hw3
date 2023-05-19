@@ -11,6 +11,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
+    @post = Post.new
   end
 
   def create
