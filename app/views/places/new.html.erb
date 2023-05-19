@@ -1,5 +1,8 @@
-<form action = "places">
-  <label for="place">Name of place:</label>
-  <input type = "text" name="place" id="place">
-  <button>Submit!</button>
-</form>
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "name", "Place Name" %>
+    <%= form.text_field "name" %>
+  </p>
+
+  <%= form.submit %>
+<% end %>
