@@ -1,1 +1,14 @@
 <h1> <%= @place["name"] %> </h1>
+
+<ul>
+  <% for post in @posts %>
+    <p>
+      <li <%= post["title"] %> </li>
+    </p>
+  <% end %>
+</ul>
+
+
+
+
+<p><%= button_to "Delete this place", @place, :method => "delete" %></p>
